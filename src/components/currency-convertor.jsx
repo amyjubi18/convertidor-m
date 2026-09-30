@@ -1,5 +1,8 @@
-import { useState, useEffect, useMemo } from "react";
+// src/components/currency-convertor.jsx
+import { useState, useEffect, useMemo, useCallback } from "react";
 import CurrencyDropdown from "./dropdown";
+import DolarApiPanel from "./DolarApiPanel";
+import { fetchDolarApiData, formatQuoteDate } from "../services/dolarApi";
 import {
   ArrowRightLeft,
   RefreshCw,
@@ -11,6 +14,7 @@ import {
   Clock,
   History,
   Globe2,
+  ShieldCheck,
 } from "lucide-react";
 import {
   CURRENCY_LIST,
@@ -22,8 +26,10 @@ import {
 export default function CurrencyConverter() {
   const [amount, setAmount] = useState("100");
   const [fromCurrency, setFromCurrency] = useState("USD");
-  const [toCurrency, setToCurrency] = useState("BTC");
+  const [toCurrency, setToCurrency] = useState("VES_PARALELO");
   const [rates, setRates] = useState(DEFAULT_FALLBACK_RATES);
+  const [ratesDates, setRatesDates] = useState({});
+  const [dolarApiDetails, setDolarApiDetails] = useState(null);
   const [allAvailableCodes, setAllAvailableCodes] = useState(
     CURRENCY_LIST.map((c) => c.code)
   );
@@ -38,9 +44,31 @@ export default function CurrencyConverter() {
       const saved = localStorage.getItem("convertidor_favorites");
       return saved
         ? JSON.parse(saved)
-        : ["USD", "EUR", "BTC", "ETH", "SOL", "MXN", "VES", "COP", "ARS"];
+        : [
+            "USD",
+            "EUR",
+            "VES_PARALELO",
+            "VES_OFICIAL",
+            "ARS_BLUE",
+            "BTC",
+            "ETH",
+            "SOL",
+            "COP",
+            "MXN",
+          ];
     } catch {
-      return ["USD", "EUR", "BTC", "ETH", "SOL", "MXN", "VES", "COP", "ARS"];
+      return [
+        "USD",
+        "EUR",
+        "VES_PARALELO",
+        "VES_OFICIAL",
+        "ARS_BLUE",
+        "BTC",
+        "ETH",
+        "SOL",
+        "COP",
+        "MXN",
+      ];
     }
   });
 
@@ -54,63 +82,120 @@ export default function CurrencyConverter() {
     }
   });
 
-  // Carga de datos de múltiples APIs (Fíat Global + Coinbase + Mercado Cripto CoinCap 1000+)
-  const fetchAllRates = async () => {
+  // Carga de datos de múltiples APIs (DolarApi en vivo + Binance + Coinbase + OpenER)
+  const fetchAllRates = useCallback(async () => {
     try {
-      const [cbRes, erRes, cryptoRes] = await Promise.all([
-        fetch("https://api.coinbase.com/v2/exchange-rates?currency=USD")
+      const [cbRes, erRes, binanceRes, dolarRes] = await Promise.allSettled([
+        fetch("https://api.coinbase.com/v2/exchange-rates?currency=USD", {
+          cache: "no-store",
+        })
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null),
-        fetch("https://open.er-api.com/v6/latest/USD")
+        fetch(`https://open.er-api.com/v6/latest/USD?_t=${Date.now()}`, {
+          cache: "no-store",
+        })
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null),
-        fetch("https://api.coincap.io/v2/assets?limit=1000")
+        fetch("https://api.binance.com/api/v3/ticker/price", {
+          cache: "no-store",
+        })
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null),
+        fetchDolarApiData(),
       ]);
 
-      const newRates = { ...rates };
+      const cb = cbRes.status === "fulfilled" ? cbRes.value : null;
+      const er = erRes.status === "fulfilled" ? erRes.value : null;
+      const binance = binanceRes.status === "fulfilled" ? binanceRes.value : null;
+      const dolar = dolarRes.status === "fulfilled" ? dolarRes.value : null;
 
-      // 1. Tasas Fíat
-      if (erRes?.rates) {
-        for (const [code, val] of Object.entries(erRes.rates)) {
-          const num = typeof val === "number" ? val : parseFloat(val);
-          if (!isNaN(num) && num > 0) newRates[code] = num;
-        }
-      }
+      setRates((prevRates) => {
+        const newRates = { ...DEFAULT_FALLBACK_RATES, ...prevRates };
 
-      // 2. Criptos Coinbase
-      if (cbRes?.data?.rates) {
-        for (const [code, valStr] of Object.entries(cbRes.data.rates)) {
-          const num = parseFloat(valStr);
-          if (!isNaN(num) && num > 0) newRates[code] = num;
-        }
-      }
-
-      // 3. Criptomonedas amplias (CoinCap - 1000+ activos)
-      if (cryptoRes?.data) {
-        cryptoRes.data.forEach((coin) => {
-          const priceUsd = parseFloat(coin.priceUsd);
-          if (!isNaN(priceUsd) && priceUsd > 0) {
-            newRates[coin.symbol.toUpperCase()] = 1 / priceUsd;
+        // 1. Tasas Fíat Globales (Open ER API)
+        if (er?.rates) {
+          for (const [code, val] of Object.entries(er.rates)) {
+            const num = typeof val === "number" ? val : parseFloat(val);
+            if (!isNaN(num) && num > 0) newRates[code] = num;
           }
-        });
+        }
+
+        // 2. Criptos Coinbase
+        if (cb?.data?.rates) {
+          for (const [code, valStr] of Object.entries(cb.data.rates)) {
+            const num = parseFloat(valStr);
+            if (!isNaN(num) && num > 0) newRates[code] = num;
+          }
+        }
+
+        // 3. Criptos Binance en tiempo real (Tickers USDT)
+        if (Array.isArray(binance)) {
+          binance.forEach((item) => {
+            if (item.symbol && item.symbol.endsWith("USDT")) {
+              const sym = item.symbol.replace("USDT", "").toUpperCase();
+              const price = parseFloat(item.price);
+              if (!isNaN(price) && price > 0) {
+                newRates[sym] = 1 / price;
+              }
+            }
+          });
+        }
+
+        // 4. DOLARAPI: Máxima prioridad para monedas de América Latina
+        // Sobrescribe y garantiza tasas en vivo intradiarias para VES, ARS, COP, CLP, etc.
+        if (dolar?.rates) {
+          Object.entries(dolar.rates).forEach(([code, val]) => {
+            const num = typeof val === "number" ? val : parseFloat(val);
+            if (!isNaN(num) && num > 0) {
+              newRates[code] = num;
+            }
+          });
+        }
+
+        // Asegurar que todas las variantes de VES existan y tengan valor positivo
+        if (!newRates["VES_PARALELO"] || newRates["VES_PARALELO"] <= 0) {
+          newRates["VES_PARALELO"] = newRates["VES"] || 955.86;
+        }
+        if (!newRates["VES_OFICIAL"] || newRates["VES_OFICIAL"] <= 0) {
+          newRates["VES_OFICIAL"] = 859.06;
+        }
+        if (!newRates["VES"] || newRates["VES"] <= 0) {
+          newRates["VES"] = newRates["VES_PARALELO"];
+        }
+
+        // Asegurar variantes de ARS
+        if (!newRates["ARS_BLUE"] || newRates["ARS_BLUE"] <= 0) {
+          newRates["ARS_BLUE"] = newRates["ARS"] || 1560.0;
+        }
+        if (!newRates["ARS_OFICIAL"] || newRates["ARS_OFICIAL"] <= 0) {
+          newRates["ARS_OFICIAL"] = 1541.54;
+        }
+        if (!newRates["ARS"] || newRates["ARS"] <= 0) {
+          newRates["ARS"] = newRates["ARS_BLUE"];
+        }
+
+        newRates["USD"] = 1.0;
+
+        const curatedCodes = CURRENCY_LIST.map((c) => c.code);
+        const dynamicCodes = Object.keys(newRates);
+        setAllAvailableCodes(
+          Array.from(new Set([...curatedCodes, ...dynamicCodes]))
+        );
+
+        return newRates;
+      });
+
+      if (dolar?.details) {
+        setDolarApiDetails(dolar.details);
       }
-
-      newRates["USD"] = 1.0;
-
-      setRates(newRates);
+      if (dolar?.ratesDates) {
+        setRatesDates((prev) => ({ ...prev, ...dolar.ratesDates }));
+      }
       setSecondsAgo(0);
-
-      const curatedCodes = CURRENCY_LIST.map((c) => c.code);
-      const dynamicCodes = Object.keys(newRates);
-      setAllAvailableCodes(
-        Array.from(new Set([...curatedCodes, ...dynamicCodes]))
-      );
     } catch (e) {
       console.warn("Falló la actualización de tasas:", e);
     }
-  };
+  }, []);
 
   // Botón manual de actualización
   const handleManualRefresh = async () => {
@@ -123,8 +208,20 @@ export default function CurrencyConverter() {
   useEffect(() => {
     fetchAllRates();
     const interval = setInterval(fetchAllRates, 30000);
-    return () => clearInterval(interval);
-  }, []);
+
+    // Re-actualizar inmediatamente al volver a la pestaña
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        fetchAllRates();
+      }
+    };
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [fetchAllRates]);
 
   // Contador de segundos transcurridos
   useEffect(() => {
@@ -173,11 +270,32 @@ export default function CurrencyConverter() {
     [toCurrency]
   );
 
+  // Tasa de conversión robusta con doble capa de respaldo contra valores 0 o undefined
   const conversionRate = useMemo(() => {
     if (fromCurrency === toCurrency) return 1;
-    const fromRate = rates[fromCurrency];
-    const toRate = rates[toCurrency];
-    if (!fromRate || !toRate) return 0;
+
+    let fromRate =
+      fromCurrency === "USD"
+        ? 1.0
+        : typeof rates[fromCurrency] === "number"
+        ? rates[fromCurrency]
+        : parseFloat(rates[fromCurrency]);
+    let toRate =
+      toCurrency === "USD"
+        ? 1.0
+        : typeof rates[toCurrency] === "number"
+        ? rates[toCurrency]
+        : parseFloat(rates[toCurrency]);
+
+    // Si por alguna razón la tasa en rates es inválida o 0, usar fallback garantizado
+    if (!fromRate || isNaN(fromRate) || fromRate <= 0) {
+      fromRate = parseFloat(DEFAULT_FALLBACK_RATES[fromCurrency]) || (fromCurrency === "USD" ? 1.0 : 0);
+    }
+    if (!toRate || isNaN(toRate) || toRate <= 0) {
+      toRate = parseFloat(DEFAULT_FALLBACK_RATES[toCurrency]) || (toCurrency === "USD" ? 1.0 : 0);
+    }
+
+    if (fromRate <= 0 || toRate <= 0) return 0;
     return toRate / fromRate;
   }, [fromCurrency, toCurrency, rates]);
 
@@ -265,6 +383,16 @@ export default function CurrencyConverter() {
     setToCurrency(to);
   };
 
+  // Detección de variantes activas para atajos rápidos
+  const isVesActive =
+    fromCurrency.startsWith("VES") || toCurrency.startsWith("VES");
+  const isArsActive =
+    fromCurrency.startsWith("ARS") || toCurrency.startsWith("ARS");
+
+  // Fecha de actualización de la moneda de destino o de origen si proviene de DolarApi
+  const activeRateDate =
+    ratesDates[toCurrency] || ratesDates[fromCurrency] || null;
+
   return (
     <div className="w-full max-w-2xl mx-auto">
       {/* Header superior */}
@@ -278,11 +406,11 @@ export default function CurrencyConverter() {
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
                 <span className="w-1.5 h-1.5 -ml-2.5 rounded-full bg-emerald-400" />
-                Mercado Global en Vivo (1,200+ Activos)
+                Mercado Global en Vivo
               </span>
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
-                <Zap className="w-3 h-3 text-indigo-400" />
-                Tiempo Real
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                <ShieldCheck className="w-3 h-3 text-emerald-400" />
+                DolarApi.com Conectado
               </span>
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20">
                 <Globe2 className="w-3 h-3 text-purple-400" />
@@ -293,7 +421,7 @@ export default function CurrencyConverter() {
               Convertidor Universal Pro
             </h1>
             <p className="text-xs sm:text-sm text-slate-400 mt-1">
-              Conversiones instantáneas para todas las divisas del mundo y el ecosistema cripto completo
+              Conversiones oficiales y paralelas en tiempo real con DolarApi y mercado cripto en vivo
             </p>
           </div>
 
@@ -333,6 +461,34 @@ export default function CurrencyConverter() {
             type="button"
             onClick={() => {
               setFromCurrency("USD");
+              setToCurrency("VES_PARALELO");
+            }}
+            className={`px-3 py-1.5 rounded-xl font-medium transition-all cursor-pointer ${
+              fromCurrency === "USD" && toCurrency.startsWith("VES")
+                ? "bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md shadow-emerald-500/20"
+                : "bg-slate-800/80 text-slate-300 hover:bg-slate-700 border border-slate-700"
+            }`}
+          >
+            🇻🇪 USD ➔ VES (DolarApi)
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setFromCurrency("USD");
+              setToCurrency("ARS_BLUE");
+            }}
+            className={`px-3 py-1.5 rounded-xl font-medium transition-all cursor-pointer ${
+              fromCurrency === "USD" && toCurrency.startsWith("ARS")
+                ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-500/20"
+                : "bg-slate-800/80 text-slate-300 hover:bg-slate-700 border border-slate-700"
+            }`}
+          >
+            🇦🇷 USD ➔ ARS (Blue)
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setFromCurrency("USD");
               setToCurrency("BTC");
             }}
             className={`px-3 py-1.5 rounded-xl font-medium transition-all cursor-pointer ${
@@ -356,34 +512,6 @@ export default function CurrencyConverter() {
             }`}
           >
             🪙 Cripto ➔ 💵 Fíat
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setFromCurrency("USD");
-              setToCurrency("EUR");
-            }}
-            className={`px-3 py-1.5 rounded-xl font-medium transition-all cursor-pointer ${
-              fromInfo.type === "fiat" && toInfo.type === "fiat"
-                ? "bg-indigo-600 text-white shadow-md"
-                : "bg-slate-800/80 text-slate-300 hover:bg-slate-700 border border-slate-700"
-            }`}
-          >
-            💵 Solo Fíat
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setFromCurrency("BTC");
-              setToCurrency("ETH");
-            }}
-            className={`px-3 py-1.5 rounded-xl font-medium transition-all cursor-pointer ${
-              fromInfo.type === "crypto" && toInfo.type === "crypto"
-                ? "bg-purple-600 text-white shadow-md"
-                : "bg-slate-800/80 text-slate-300 hover:bg-slate-700 border border-slate-700"
-            }`}
-          >
-            🪙 Solo Cripto
           </button>
         </div>
       </div>
@@ -462,7 +590,7 @@ export default function CurrencyConverter() {
         </div>
 
         {/* Selectores de moneda con botón de Swap */}
-        <div className="grid grid-cols-1 sm:grid-cols-[1fr,auto,1fr] gap-3 sm:gap-4 items-center mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-[1fr,auto,1fr] gap-3 sm:gap-4 items-center mb-4">
           <CurrencyDropdown
             title="Convertir De"
             currency={fromCurrency}
@@ -497,14 +625,119 @@ export default function CurrencyConverter() {
           />
         </div>
 
+        {/* Atajos Rápidos de Variantes para VES y ARS */}
+        {(isVesActive || isArsActive) && (
+          <div className="mb-6 p-3 bg-slate-800/80 rounded-2xl border border-slate-700/80 flex flex-wrap items-center justify-between gap-2.5 animate-in fade-in duration-200">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-semibold text-slate-300">
+                {isVesActive
+                  ? "🇻🇪 Variantes de Bolívar (Venezuela):"
+                  : "🇦🇷 Tipos de Dólar (Argentina):"}
+              </span>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-semibold border border-emerald-500/30">
+                DolarApi en vivo
+              </span>
+            </div>
+
+            <div className="flex items-center gap-1.5 flex-wrap">
+              {isVesActive && (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (toCurrency.startsWith("VES")) setToCurrency("VES_PARALELO");
+                      else if (fromCurrency.startsWith("VES")) setFromCurrency("VES_PARALELO");
+                    }}
+                    className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all cursor-pointer ${
+                      toCurrency === "VES_PARALELO" || fromCurrency === "VES_PARALELO"
+                        ? "bg-emerald-600 text-white shadow-md shadow-emerald-600/30 border border-emerald-400"
+                        : "bg-slate-700/70 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-600/60"
+                    }`}
+                  >
+                    🔥 Paralelo ({rates["VES_PARALELO"] ? `${formatCurrencyValue(rates["VES_PARALELO"], "fiat")} Bs` : "955.86 Bs"})
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (toCurrency.startsWith("VES")) setToCurrency("VES_OFICIAL");
+                      else if (fromCurrency.startsWith("VES")) setFromCurrency("VES_OFICIAL");
+                    }}
+                    className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all cursor-pointer ${
+                      toCurrency === "VES_OFICIAL" || fromCurrency === "VES_OFICIAL"
+                        ? "bg-emerald-600 text-white shadow-md shadow-emerald-600/30 border border-emerald-400"
+                        : "bg-slate-700/70 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-600/60"
+                    }`}
+                  >
+                    🏛️ Oficial BCV ({rates["VES_OFICIAL"] ? `${formatCurrencyValue(rates["VES_OFICIAL"], "fiat")} Bs` : "859.06 Bs"})
+                  </button>
+                </>
+              )}
+
+              {isArsActive && (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (toCurrency.startsWith("ARS")) setToCurrency("ARS_BLUE");
+                      else if (fromCurrency.startsWith("ARS")) setFromCurrency("ARS_BLUE");
+                    }}
+                    className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all cursor-pointer ${
+                      toCurrency === "ARS_BLUE" || fromCurrency === "ARS_BLUE"
+                        ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30 border border-indigo-400"
+                        : "bg-slate-700/70 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-600/60"
+                    }`}
+                  >
+                    💵 Blue ({rates["ARS_BLUE"] ? `$${formatCurrencyValue(rates["ARS_BLUE"], "fiat")}` : "$1,560"})
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (toCurrency.startsWith("ARS")) setToCurrency("ARS_OFICIAL");
+                      else if (fromCurrency.startsWith("ARS")) setFromCurrency("ARS_OFICIAL");
+                    }}
+                    className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all cursor-pointer ${
+                      toCurrency === "ARS_OFICIAL" || fromCurrency === "ARS_OFICIAL"
+                        ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30 border border-indigo-400"
+                        : "bg-slate-700/70 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-600/60"
+                    }`}
+                  >
+                    🏛️ Oficial ({rates["ARS_OFICIAL"] ? `$${formatCurrencyValue(rates["ARS_OFICIAL"], "fiat")}` : "$1,541"})
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (toCurrency.startsWith("ARS")) setToCurrency("ARS_MEP");
+                      else if (fromCurrency.startsWith("ARS")) setFromCurrency("ARS_MEP");
+                    }}
+                    className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all cursor-pointer ${
+                      toCurrency === "ARS_MEP" || fromCurrency === "ARS_MEP"
+                        ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30 border border-indigo-400"
+                        : "bg-slate-700/70 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-600/60"
+                    }`}
+                  >
+                    📈 MEP
+                  </button>
+                </>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* Tarjeta de resultado */}
         <div className="relative p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-indigo-950/60 via-slate-900/90 to-purple-950/60 border border-indigo-500/30 shadow-xl overflow-hidden">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="min-w-0">
-              <span className="text-xs font-semibold tracking-wider uppercase text-indigo-300 flex items-center gap-1.5 mb-1">
-                <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />
-                Resultado en Tiempo Real
-              </span>
+              <div className="flex items-center gap-2 mb-1 flex-wrap">
+                <span className="text-xs font-semibold tracking-wider uppercase text-indigo-300 flex items-center gap-1.5">
+                  <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />
+                  Resultado en Tiempo Real
+                </span>
+                {activeRateDate && (
+                  <span className="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/25">
+                    {formatQuoteDate(activeRateDate)}
+                  </span>
+                )}
+              </div>
 
               <div className="flex items-baseline gap-2.5 flex-wrap">
                 <span className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight break-all">
@@ -567,21 +800,21 @@ export default function CurrencyConverter() {
           <div className="flex items-center justify-between mb-2.5">
             <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
               <Zap className="w-3.5 h-3.5 text-amber-400" />
-              Pares Populares
+              Pares Populares (1-Click)
             </h3>
-            <span className="text-[11px] text-slate-500">1-click</span>
+            <span className="text-[11px] text-slate-500">Tiempo Real</span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {[
+              { from: "USD", to: "VES_PARALELO", label: "USD / VES Paralelo" },
+              { from: "USD", to: "VES_OFICIAL", label: "USD / VES BCV" },
+              { from: "USD", to: "ARS_BLUE", label: "USD / ARS Blue" },
+              { from: "USD", to: "COP", label: "USD / COP" },
               { from: "BTC", to: "USD", label: "BTC / USD" },
               { from: "ETH", to: "USD", label: "ETH / USD" },
               { from: "SOL", to: "USD", label: "SOL / USD" },
               { from: "USD", to: "EUR", label: "USD / EUR" },
-              { from: "USD", to: "MXN", label: "USD / MXN" },
-              { from: "USD", to: "VES", label: "USD / VES" },
-              { from: "USD", to: "COP", label: "USD / COP" },
-              { from: "USD", to: "ARS", label: "USD / ARS" },
             ].map((pair) => {
               const pairRate =
                 rates[pair.from] && rates[pair.to]
@@ -627,7 +860,7 @@ export default function CurrencyConverter() {
           <div className="mt-6 pt-5 border-t border-slate-800">
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-                <History className="w-3.5 h-3.5 text-indigo-400 " />
+                <History className="w-3.5 h-3.5 text-indigo-400" />
                 Historial Reciente
               </span>
               <button
@@ -672,6 +905,14 @@ export default function CurrencyConverter() {
           </div>
         )}
       </div>
+
+      {/* Panel Informativo de Cotizaciones en Vivo de DolarApi */}
+      <DolarApiPanel
+        dolarApiDetails={dolarApiDetails}
+        onSelectCurrencyPair={selectQuickPair}
+        isRefreshing={isRefreshing}
+        activeCurrency={toCurrency}
+      />
     </div>
   );
 }
