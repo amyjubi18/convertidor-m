@@ -23,6 +23,17 @@ import {
   formatCurrencyValue,
 } from "../data/currencies";
 
+// Helper seguro para consumir APIs externas sin lanzar Unhandled Rejections
+const safeFetchJson = async (url) => {
+  try {
+    const res = await fetch(url);
+    if (!res || !res.ok) return null;
+    return await res.json();
+  } catch {
+    return null;
+  }
+};
+
 export default function CurrencyConverter() {
   const [amount, setAmount] = useState("100");
   const [fromCurrency, setFromCurrency] = useState("USD");
@@ -85,23 +96,12 @@ export default function CurrencyConverter() {
   // Carga de datos de múltiples APIs (DolarApi en vivo + Binance + Coinbase + OpenER)
   const fetchAllRates = useCallback(async () => {
     try {
-      const [cbRes, erRes, binanceRes, dolarRes] = await Promise.allSettled([
-        fetch(`https://api.coinbase.com/v2/exchange-rates?currency=USD&_t=${Date.now()}`)
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null),
-        fetch(`https://open.er-api.com/v6/latest/USD?_t=${Date.now()}`)
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null),
-        fetch(`https://api.binance.com/api/v3/ticker/price?_t=${Date.now()}`)
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null),
+      const [cb, er, binance, dolar] = await Promise.all([
+        safeFetchJson(`https://api.coinbase.com/v2/exchange-rates?currency=USD&_t=${Date.now()}`),
+        safeFetchJson(`https://open.er-api.com/v6/latest/USD?_t=${Date.now()}`),
+        safeFetchJson(`https://api.binance.com/api/v3/ticker/price?_t=${Date.now()}`),
         fetchDolarApiData(),
       ]);
-
-      const cb = cbRes.status === "fulfilled" ? cbRes.value : null;
-      const er = erRes.status === "fulfilled" ? erRes.value : null;
-      const binance = binanceRes.status === "fulfilled" ? binanceRes.value : null;
-      const dolar = dolarRes.status === "fulfilled" ? dolarRes.value : null;
 
       setRates((prevRates) => {
         const newRates = { ...DEFAULT_FALLBACK_RATES, ...prevRates };
