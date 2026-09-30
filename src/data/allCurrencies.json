@@ -1,0 +1,6266 @@
+[
+  {
+    "code": "BTC",
+    "name": "Bitcoin",
+    "symbol": "₿",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-amber-500 text-white"
+  },
+  {
+    "code": "ETH",
+    "name": "Ether",
+    "symbol": "Ξ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-indigo-600 text-white"
+  },
+  {
+    "code": "SOL",
+    "name": "Solana",
+    "symbol": "◎",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-gradient-to-r from-purple-500 to-teal-400 text-white"
+  },
+  {
+    "code": "USDT",
+    "name": "Tether",
+    "symbol": "₮",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Stablecoin",
+    "iconBg": "bg-emerald-600 text-white"
+  },
+  {
+    "code": "USDC",
+    "name": "USDC",
+    "symbol": "$",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Stablecoin",
+    "iconBg": "bg-blue-600 text-white"
+  },
+  {
+    "code": "BNB",
+    "name": "BNB",
+    "symbol": "BNB",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-yellow-500 text-black"
+  },
+  {
+    "code": "XRP",
+    "name": "XRP",
+    "symbol": "✕",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-sky-600 text-white"
+  },
+  {
+    "code": "ADA",
+    "name": "Cardano",
+    "symbol": "₳",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-blue-700 text-white"
+  },
+  {
+    "code": "DOGE",
+    "name": "Dogecoin",
+    "symbol": "Ð",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Memecoin",
+    "iconBg": "bg-amber-400 text-black"
+  },
+  {
+    "code": "AVAX",
+    "name": "Avalanche",
+    "symbol": "AVAX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-red-600 text-white"
+  },
+  {
+    "code": "DOT",
+    "name": "Polkadot",
+    "symbol": "●",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-pink-600 text-white"
+  },
+  {
+    "code": "LINK",
+    "name": "Chainlink",
+    "symbol": "⬡",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-blue-600 text-white"
+  },
+  {
+    "code": "SUI",
+    "name": "Sui",
+    "symbol": "SUI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-cyan-600 text-white"
+  },
+  {
+    "code": "PEPE",
+    "name": "Pepe",
+    "symbol": "PEPE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Memecoin",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SHIB",
+    "name": "Shiba Inu",
+    "symbol": "SHIB",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Memecoin",
+    "iconBg": "bg-orange-600 text-white"
+  },
+  {
+    "code": "NEAR",
+    "name": "Near Protocol",
+    "symbol": "NEAR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-zinc-700 text-white"
+  },
+  {
+    "code": "MATIC",
+    "name": "Polygon",
+    "symbol": "POL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LTC",
+    "name": "Litecoin",
+    "symbol": "Ł",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-slate-500 text-white"
+  },
+  {
+    "code": "UNI",
+    "name": "Uniswap",
+    "symbol": "UNI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "DeFi",
+    "iconBg": "bg-pink-600 text-white"
+  },
+  {
+    "code": "USD",
+    "name": "Dólar Estadounidense",
+    "country": "Estados Unidos",
+    "symbol": "$",
+    "flag": "🇺🇸",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "EUR",
+    "name": "Euro",
+    "country": "Unión Europea",
+    "symbol": "€",
+    "flag": "🇪🇺",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MXN",
+    "name": "Peso Mexicano",
+    "country": "México",
+    "symbol": "$",
+    "flag": "🇲🇽",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "COP",
+    "name": "Peso Colombiano",
+    "country": "Colombia",
+    "symbol": "$",
+    "flag": "🇨🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ARS",
+    "name": "Peso Argentino",
+    "country": "Argentina",
+    "symbol": "$",
+    "flag": "🇦🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "CLP",
+    "name": "Peso Chileno",
+    "country": "Chile",
+    "symbol": "$",
+    "flag": "🇨🇱",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "PEN",
+    "name": "Sol Peruano",
+    "country": "Perú",
+    "symbol": "S/",
+    "flag": "🇵🇪",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "VES",
+    "name": "Bolívar Soberano",
+    "country": "Venezuela",
+    "symbol": "Bs.",
+    "flag": "🇻🇪",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BRL",
+    "name": "Real Brasileño",
+    "country": "Brasil",
+    "symbol": "R$",
+    "flag": "🇧🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BOB",
+    "name": "Boliviano",
+    "country": "Bolivia",
+    "symbol": "Bs",
+    "flag": "🇧🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "UYU",
+    "name": "Peso Uruguayo",
+    "country": "Uruguay",
+    "symbol": "$U",
+    "flag": "🇺🇾",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "PYG",
+    "name": "Guaraní Paraguayo",
+    "country": "Paraguay",
+    "symbol": "₲",
+    "flag": "🇵🇾",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "CRC",
+    "name": "Colón Costarricense",
+    "country": "Costa Rica",
+    "symbol": "₡",
+    "flag": "🇨🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "DOP",
+    "name": "Peso Dominicano",
+    "country": "República Dominicana",
+    "symbol": "RD$",
+    "flag": "🇩🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "GTQ",
+    "name": "Quetzal Guatemalteco",
+    "country": "Guatemala",
+    "symbol": "Q",
+    "flag": "🇬🇹",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "HNL",
+    "name": "Lempira Hondureña",
+    "country": "Honduras",
+    "symbol": "L",
+    "flag": "🇭🇳",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "NIO",
+    "name": "Córdoba Nicaragüense",
+    "country": "Nicaragua",
+    "symbol": "C$",
+    "flag": "🇳🇮",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "PAB",
+    "name": "Balboa Panameño",
+    "country": "Panamá",
+    "symbol": "B/.",
+    "flag": "🇵🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "CUP",
+    "name": "Peso Cubano",
+    "country": "Cuba",
+    "symbol": "$",
+    "flag": "🇨🇺",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "CAD",
+    "name": "Dólar Canadiense",
+    "country": "Canadá",
+    "symbol": "C$",
+    "flag": "🇨🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "GBP",
+    "name": "Libra Esterlina",
+    "country": "Reino Unido",
+    "symbol": "£",
+    "flag": "🇬🇧",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "CHF",
+    "name": "Franco Suizo",
+    "country": "Suiza",
+    "symbol": "Fr",
+    "flag": "🇨🇭",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "JPY",
+    "name": "Yen Japonés",
+    "country": "Japón",
+    "symbol": "¥",
+    "flag": "🇯🇵",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "CNY",
+    "name": "Yuan Chino",
+    "country": "China",
+    "symbol": "¥",
+    "flag": "🇨🇳",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "INR",
+    "name": "Rupia India",
+    "country": "India",
+    "symbol": "₹",
+    "flag": "🇮🇳",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "KRW",
+    "name": "Won Surcoreano",
+    "country": "Corea del Sur",
+    "symbol": "₩",
+    "flag": "🇰🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "AUD",
+    "name": "Dólar Australiano",
+    "country": "Australia",
+    "symbol": "A$",
+    "flag": "🇦🇺",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "NZD",
+    "name": "Dólar Neozelandés",
+    "country": "Nueva Zelanda",
+    "symbol": "NZ$",
+    "flag": "🇳🇿",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "AED",
+    "name": "Dírham de EAU",
+    "country": "Emiratos Árabes",
+    "symbol": "د.إ",
+    "flag": "🇦🇪",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SAR",
+    "name": "Riyal Saudí",
+    "country": "Arabia Saudita",
+    "symbol": "﷼",
+    "flag": "🇸🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "TRY",
+    "name": "Lira Turca",
+    "country": "Turquía",
+    "symbol": "₺",
+    "flag": "🇹🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "00",
+    "name": "00 Token",
+    "symbol": "00",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "1INCH",
+    "name": "1Inch",
+    "symbol": "1INCH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "2Z",
+    "name": "Doublezero",
+    "symbol": "2Z",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "A8",
+    "name": "Ancient8",
+    "symbol": "A8",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AAVE",
+    "name": "Aave",
+    "symbol": "AAVE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ABT",
+    "name": "Arcblock",
+    "symbol": "ABT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ACH",
+    "name": "Alchemy Pay",
+    "symbol": "ACH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ACS",
+    "name": "Access Protocol",
+    "symbol": "ACS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ACX",
+    "name": "Across Protocol",
+    "symbol": "ACX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AERGO",
+    "name": "Aergo",
+    "symbol": "AERGO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AERO",
+    "name": "Aerodrome Finance",
+    "symbol": "AERO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AFN",
+    "name": "Afghan Afghani",
+    "country": "Afghan Afghani",
+    "symbol": "AFN",
+    "flag": "🇦🇫",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "AGLD",
+    "name": "Adventure Gold",
+    "symbol": "AGLD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AI",
+    "name": "Gensyn",
+    "symbol": "AI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AIOZ",
+    "name": "Aioz Network",
+    "symbol": "AIOZ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AKT",
+    "name": "Akash",
+    "symbol": "AKT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ALCX",
+    "name": "Alchemix",
+    "symbol": "ALCX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ALEO",
+    "name": "Aleo",
+    "symbol": "ALEO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ALEPH",
+    "name": "Aleph.im v2",
+    "symbol": "ALEPH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ALGO",
+    "name": "Algorand",
+    "symbol": "ALGO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ALICE",
+    "name": "My Neighbor Alice",
+    "symbol": "ALICE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ALIGN",
+    "name": "Aligned",
+    "symbol": "ALIGN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ALL",
+    "name": "Albanian Lek",
+    "country": "Albanian Lek",
+    "symbol": "ALL",
+    "flag": "🇦🇱",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ALLO",
+    "name": "Allora",
+    "symbol": "ALLO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ALT",
+    "name": "Altlayer",
+    "symbol": "ALT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AMD",
+    "name": "Armenian Dram",
+    "country": "Armenian Dram",
+    "symbol": "AMD",
+    "flag": "🇦🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "AMP",
+    "name": "Amp",
+    "symbol": "AMP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ANG",
+    "name": "Netherlands Antillean Gulden",
+    "country": "Netherlands Antillean Gulden",
+    "symbol": "ANG",
+    "flag": "🇦🇳",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ANKR",
+    "name": "Ankr",
+    "symbol": "ANKR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ANT",
+    "name": "Aragon",
+    "symbol": "ANT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AOA",
+    "name": "Angolan Kwanza",
+    "country": "Angolan Kwanza",
+    "symbol": "AOA",
+    "flag": "🇦🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "APE",
+    "name": "ApeCoin",
+    "symbol": "APE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "API3",
+    "name": "API3",
+    "symbol": "API3",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "APR",
+    "name": "aPriori",
+    "symbol": "APR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "APT",
+    "name": "Aptos",
+    "symbol": "APT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ARB",
+    "name": "Arbitrum",
+    "symbol": "ARB",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ARKM",
+    "name": "Arkham",
+    "symbol": "ARKM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ARPA",
+    "name": "ARPA",
+    "symbol": "ARPA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ARX",
+    "name": "Arcium",
+    "symbol": "ARX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ASM",
+    "name": "Assemble Protocol",
+    "symbol": "ASM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AST",
+    "name": "AirSwap",
+    "symbol": "AST",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ASTER",
+    "name": "Aster",
+    "symbol": "ASTER",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ATA",
+    "name": "Automata Network",
+    "symbol": "ATA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ATH",
+    "name": "Aethir",
+    "symbol": "ATH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ATOM",
+    "name": "Cosmos",
+    "symbol": "ATOM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-violet-700 text-white"
+  },
+  {
+    "code": "AUCTION",
+    "name": "Bounce Token",
+    "symbol": "AUCTION",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AUDD",
+    "name": "Australian Digital Dollar",
+    "symbol": "AUDD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AUDIO",
+    "name": "Audius",
+    "symbol": "AUDIO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AURORA",
+    "name": "Aurora",
+    "symbol": "AURORA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AVNT",
+    "name": "Avantis",
+    "symbol": "AVNT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AVT",
+    "name": "Aventus",
+    "symbol": "AVT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AWE",
+    "name": "Awe",
+    "symbol": "AWE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AWG",
+    "name": "Aruban Florin",
+    "country": "Aruban Florin",
+    "symbol": "AWG",
+    "flag": "🇦🇼",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "AXL",
+    "name": "Axelar",
+    "symbol": "AXL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AXS",
+    "name": "Axie Infinity",
+    "symbol": "AXS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "AZN",
+    "name": "Azerbaijani Manat",
+    "country": "Azerbaijani Manat",
+    "symbol": "AZN",
+    "flag": "🇦🇿",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "AZTEC",
+    "name": "Aztec",
+    "symbol": "AZTEC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "B3",
+    "name": "B3 (Base)",
+    "symbol": "B3",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BADGER",
+    "name": "Badger DAO",
+    "symbol": "BADGER",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BAL",
+    "name": "Balancer",
+    "symbol": "BAL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BAM",
+    "name": "Bosnia and Herzegovina Convertible Mark",
+    "country": "Bosnia and Herzegovina Convertible Mark",
+    "symbol": "BAM",
+    "flag": "🇧🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BAND",
+    "name": "Band Protocol",
+    "symbol": "BAND",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BARD",
+    "name": "Lombard",
+    "symbol": "BARD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BASECAT",
+    "name": "Basecat",
+    "symbol": "BASECAT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BASED1",
+    "name": "Based One",
+    "symbol": "BASED1",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BAT",
+    "name": "Basic Attention Token",
+    "symbol": "BAT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BBD",
+    "name": "Barbadian Dollar",
+    "country": "Barbadian Dollar",
+    "symbol": "BBD",
+    "flag": "🇧🇧",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BCH",
+    "name": "Bitcoin Cash",
+    "symbol": "BCH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-emerald-600 text-white"
+  },
+  {
+    "code": "BDT",
+    "name": "Bangladeshi Taka",
+    "country": "Bangladeshi Taka",
+    "symbol": "BDT",
+    "flag": "🇧🇩",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BEAM",
+    "name": "Beam",
+    "symbol": "BEAM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BERA",
+    "name": "Berachain",
+    "symbol": "BERA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BGN",
+    "name": "Lev Búlgaro",
+    "country": "Bulgaria",
+    "symbol": "лв",
+    "flag": "🇧🇬",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BHD",
+    "name": "Dinar Bareiní",
+    "country": "Baréin",
+    "symbol": "BD",
+    "flag": "🇧🇭",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BICO",
+    "name": "Biconomy",
+    "symbol": "BICO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BIF",
+    "name": "Burundian Franc",
+    "country": "Burundian Franc",
+    "symbol": "BIF",
+    "flag": "🇧🇮",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BIGTIME",
+    "name": "Big Time",
+    "symbol": "BIGTIME",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BILL",
+    "name": "Billions Network",
+    "symbol": "BILL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BIO",
+    "name": "Bio Protocol",
+    "symbol": "BIO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BIRB",
+    "name": "Moonbirds",
+    "symbol": "BIRB",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BIT",
+    "name": "BitDAO",
+    "symbol": "BIT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BLAST",
+    "name": "Blast",
+    "symbol": "BLAST",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BLEND",
+    "name": "Fluent",
+    "symbol": "BLEND",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BLUECHIP",
+    "name": "Blue Chip",
+    "symbol": "BLUECHIP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BLUR",
+    "name": "Blur",
+    "symbol": "BLUR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BLZ",
+    "name": "Bluzelle",
+    "symbol": "BLZ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BMD",
+    "name": "Bermudian Dollar",
+    "country": "Bermudian Dollar",
+    "symbol": "BMD",
+    "flag": "🇧🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BND",
+    "name": "Brunei Dollar",
+    "country": "Brunei Dollar",
+    "symbol": "BND",
+    "flag": "🇧🇳",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BNKR",
+    "name": "BankrCoin",
+    "symbol": "BNKR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BNT",
+    "name": "Bancor",
+    "symbol": "BNT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BOBA",
+    "name": "Boba Network",
+    "symbol": "BOBA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BOBBOB",
+    "name": "Bob",
+    "symbol": "BOBBOB",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BOND",
+    "name": "BarnBridge",
+    "symbol": "BOND",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BONK",
+    "name": "Bonk",
+    "symbol": "BONK",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BREV",
+    "name": "Brevis",
+    "symbol": "BREV",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BSD",
+    "name": "Bahamian Dollar",
+    "country": "Bahamian Dollar",
+    "symbol": "BSD",
+    "flag": "🇧🇸",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BTN",
+    "name": "Bhutanese Ngultrum",
+    "country": "Bhutanese Ngultrum",
+    "symbol": "BTN",
+    "flag": "🇧🇹",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BTRST",
+    "name": "Braintrust",
+    "symbol": "BTRST",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BUSD",
+    "name": "Binance USD",
+    "symbol": "BUSD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "BWP",
+    "name": "Botswana Pula",
+    "country": "Botswana Pula",
+    "symbol": "BWP",
+    "flag": "🇧🇼",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BYN",
+    "name": "Belarusian Ruble",
+    "country": "Belarusian Ruble",
+    "symbol": "BYN",
+    "flag": "🇧🇾",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BYR",
+    "name": "Belarusian Ruble",
+    "country": "Belarusian Ruble",
+    "symbol": "BYR",
+    "flag": "🇧🇾",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "BZD",
+    "name": "Belize Dollar",
+    "country": "Belize Dollar",
+    "symbol": "BZD",
+    "flag": "🇧🇿",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "C98",
+    "name": "Coin98",
+    "symbol": "C98",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CAKE",
+    "name": "Pancakeswap",
+    "symbol": "CAKE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CAP",
+    "name": "Cap",
+    "symbol": "CAP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CBETH",
+    "name": "Coinbase Wrapped Staked ETH",
+    "symbol": "CBETH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CDF",
+    "name": "Congolese Franc",
+    "country": "Congolese Franc",
+    "symbol": "CDF",
+    "flag": "🇨🇩",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "CELR",
+    "name": "Celer Network",
+    "symbol": "CELR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CFG",
+    "name": "Centrifuge",
+    "symbol": "CFG",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CGLD",
+    "name": "Celo",
+    "symbol": "CGLD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CHECK",
+    "name": "Checkmate",
+    "symbol": "CHECK",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CHIP",
+    "name": "USD.AI",
+    "symbol": "CHIP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CHZ",
+    "name": "Chiliz",
+    "symbol": "CHZ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CLANKER",
+    "name": "Tokenbot",
+    "symbol": "CLANKER",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CLF",
+    "name": "Unidad de Fomento",
+    "country": "Unidad de Fomento",
+    "symbol": "CLF",
+    "flag": "🇨🇱",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "CLV",
+    "name": "Clover Finance",
+    "symbol": "CLV",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CNH",
+    "name": "Chinese Renminbi Yuan Offshore",
+    "country": "Chinese Renminbi Yuan Offshore",
+    "symbol": "CNH",
+    "flag": "🇨🇳",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "COMP",
+    "name": "Compound",
+    "symbol": "COMP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "COOKIE",
+    "name": "Cookie Dao",
+    "symbol": "COOKIE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CORECHAIN",
+    "name": "Core",
+    "symbol": "CORECHAIN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "COSMOSDYDX",
+    "name": "dYdX",
+    "symbol": "COSMOSDYDX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "COTI",
+    "name": "COTI",
+    "symbol": "COTI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "COVAL",
+    "name": "Circuits of Value",
+    "symbol": "COVAL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "COW",
+    "name": "Cow Protocol",
+    "symbol": "COW",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CP",
+    "name": "Cluster Protocol",
+    "symbol": "CP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CRO",
+    "name": "Crypto.com Coin",
+    "symbol": "CRO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CRPT",
+    "name": "Crypterium",
+    "symbol": "CRPT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CRV",
+    "name": "Curve DAO Token",
+    "symbol": "CRV",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CTR",
+    "name": "Citrea",
+    "symbol": "CTR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CTSI",
+    "name": "Cartesi",
+    "symbol": "CTSI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CTX",
+    "name": "Cryptex Finance",
+    "symbol": "CTX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CUC",
+    "name": "Cuban Convertible Peso",
+    "country": "Cuban Convertible Peso",
+    "symbol": "CUC",
+    "flag": "🇨🇺",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "CVC",
+    "name": "Civic",
+    "symbol": "CVC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CVE",
+    "name": "Cape Verdean Escudo",
+    "country": "Cape Verdean Escudo",
+    "symbol": "CVE",
+    "flag": "🇨🇻",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "CVX",
+    "name": "Convex Finance",
+    "symbol": "CVX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "CZK",
+    "name": "Corona Checa",
+    "country": "República Checa",
+    "symbol": "Kč",
+    "flag": "🇨🇿",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "DAI",
+    "name": "Dai",
+    "symbol": "DAI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DAR",
+    "name": "Mines of Dalarnia",
+    "symbol": "DAR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DASH",
+    "name": "Dash",
+    "symbol": "DASH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DBR",
+    "name": "Debridge",
+    "symbol": "DBR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DDX",
+    "name": "DerivaDAO",
+    "symbol": "DDX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DEEP",
+    "name": "Deepbook",
+    "symbol": "DEEP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DEGEN",
+    "name": "Degen",
+    "symbol": "DEGEN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DESO",
+    "name": "Decentralized Social",
+    "symbol": "DESO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DEXT",
+    "name": "DEXTools",
+    "symbol": "DEXT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DIA",
+    "name": "DIA",
+    "symbol": "DIA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DIEM",
+    "name": "Diem",
+    "symbol": "DIEM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DIMO",
+    "name": "Dimo",
+    "symbol": "DIMO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DJF",
+    "name": "Djiboutian Franc",
+    "country": "Djiboutian Franc",
+    "symbol": "DJF",
+    "flag": "🇩🇯",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "DKK",
+    "name": "Corona Danesa",
+    "country": "Dinamarca",
+    "symbol": "kr",
+    "flag": "🇩🇰",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "DNT",
+    "name": "district0x",
+    "symbol": "DNT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DOGINME",
+    "name": "Doginme",
+    "symbol": "DOGINME",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DOLO",
+    "name": "Dolomite",
+    "symbol": "DOLO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DOOD",
+    "name": "Doodles",
+    "symbol": "DOOD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DRB",
+    "name": "Debtreliefbot",
+    "symbol": "DRB",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DREP",
+    "name": "Drep",
+    "symbol": "DREP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DRIFT",
+    "name": "Drift Protocol",
+    "symbol": "DRIFT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DRV",
+    "name": "Derive",
+    "symbol": "DRV",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DYP",
+    "name": "DeFi Yield Protocol",
+    "symbol": "DYP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "DZD",
+    "name": "Algerian Dinar",
+    "country": "Algerian Dinar",
+    "symbol": "DZD",
+    "flag": "🇩🇿",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "EDGE",
+    "name": "Definitive",
+    "symbol": "EDGE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "EDGEX",
+    "name": "Edgex",
+    "symbol": "EDGEX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "EGLD",
+    "name": "MultiversX",
+    "symbol": "EGLD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "EGP",
+    "name": "Libra Egipcia",
+    "country": "Egipto",
+    "symbol": "E£",
+    "flag": "🇪🇬",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "EIGEN",
+    "name": "Eigenlayer",
+    "symbol": "EIGEN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ELA",
+    "name": "Elastos",
+    "symbol": "ELA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ELSA",
+    "name": "Elsa",
+    "symbol": "ELSA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ENA",
+    "name": "Ethena",
+    "symbol": "ENA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ENJ",
+    "name": "Enjin Coin",
+    "symbol": "ENJ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ENS",
+    "name": "Ethereum Name Service",
+    "symbol": "ENS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "EOS",
+    "name": "EOS",
+    "symbol": "EOS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ERA",
+    "name": "Caldera",
+    "symbol": "ERA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ERN",
+    "name": "ERN",
+    "country": "ERN",
+    "symbol": "ERN",
+    "flag": "🇪🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ESP",
+    "name": "Espresso",
+    "symbol": "ESP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ETB",
+    "name": "Ethiopian Birr",
+    "country": "Ethiopian Birr",
+    "symbol": "ETB",
+    "flag": "🇪🇹",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ETC",
+    "name": "Ether Classic",
+    "symbol": "ETC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ETHFI",
+    "name": "Ether.Fi",
+    "symbol": "ETHFI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "EUL",
+    "name": "Euler",
+    "symbol": "EUL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "EURC",
+    "name": "EURC",
+    "symbol": "EURC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FAI",
+    "name": "Freysa Ai",
+    "symbol": "FAI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FARM",
+    "name": "Harvest Finance",
+    "symbol": "FARM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FARTCOIN",
+    "name": "Fartcoin",
+    "symbol": "FARTCOIN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FET",
+    "name": "Fetch.ai",
+    "symbol": "FET",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FIDA",
+    "name": "Bonfida",
+    "symbol": "FIDA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FIGHT",
+    "name": "Fight",
+    "symbol": "FIGHT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FIL",
+    "name": "Filecoin",
+    "symbol": "FIL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FIS",
+    "name": "Stafi",
+    "symbol": "FIS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FJD",
+    "name": "Fijian Dollar",
+    "country": "Fijian Dollar",
+    "symbol": "FJD",
+    "flag": "🇫🇯",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "FKP",
+    "name": "Falkland Pound",
+    "country": "Falkland Pound",
+    "symbol": "FKP",
+    "flag": "🇫🇰",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "FLOCK",
+    "name": "Flock",
+    "symbol": "FLOCK",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FLOKI",
+    "name": "Floki",
+    "symbol": "FLOKI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FLOW",
+    "name": "Flow",
+    "symbol": "FLOW",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FLR",
+    "name": "Flare",
+    "symbol": "FLR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FLUID",
+    "name": "Fluid",
+    "symbol": "FLUID",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FOK",
+    "name": "FOK",
+    "country": "FOK",
+    "symbol": "FOK",
+    "flag": "🇫🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "FORT",
+    "name": "Forta",
+    "symbol": "FORT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FORTH",
+    "name": "Ampleforth Governance Token",
+    "symbol": "FORTH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FOX",
+    "name": "ShapeShift FOX Token",
+    "symbol": "FOX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FUN1",
+    "name": "Sport.Fun",
+    "symbol": "FUN1",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "FX",
+    "name": "Function X",
+    "symbol": "FX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "G",
+    "name": "Gravity",
+    "symbol": "G",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GAL",
+    "name": "Project Galaxy",
+    "symbol": "GAL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GALA",
+    "name": "Gala V1",
+    "symbol": "GALA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GEL",
+    "name": "Georgian Lari",
+    "country": "Georgian Lari",
+    "symbol": "GEL",
+    "flag": "🇬🇪",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "GEOD",
+    "name": "Geodnet",
+    "symbol": "GEOD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GFI",
+    "name": "Goldfinch",
+    "symbol": "GFI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GGP",
+    "name": "Guernsey Pound",
+    "country": "Guernsey Pound",
+    "symbol": "GGP",
+    "flag": "🇬🇬",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "GHS",
+    "name": "Ghanaian Cedi",
+    "country": "Ghanaian Cedi",
+    "symbol": "GHS",
+    "flag": "🇬🇭",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "GHST",
+    "name": "Aavegotchi",
+    "symbol": "GHST",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GIGA",
+    "name": "Gigachad",
+    "symbol": "GIGA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GIP",
+    "name": "Gibraltar Pound",
+    "country": "Gibraltar Pound",
+    "symbol": "GIP",
+    "flag": "🇬🇮",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "GLM",
+    "name": "Golem Network",
+    "symbol": "GLM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GMD",
+    "name": "Gambian Dalasi",
+    "country": "Gambian Dalasi",
+    "symbol": "GMD",
+    "flag": "🇬🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "GMT",
+    "name": "STEPN",
+    "symbol": "GMT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GNF",
+    "name": "Guinean Franc",
+    "country": "Guinean Franc",
+    "symbol": "GNF",
+    "flag": "🇬🇳",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "GNO",
+    "name": "Gnosis",
+    "symbol": "GNO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GNT",
+    "name": "Golem",
+    "symbol": "GNT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GODS",
+    "name": "Gods Unchained",
+    "symbol": "GODS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GRASS",
+    "name": "Grass",
+    "symbol": "GRASS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GROVE",
+    "name": "Grove",
+    "symbol": "GROVE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GRT",
+    "name": "The Graph",
+    "symbol": "GRT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GRVT",
+    "name": "Grvt",
+    "symbol": "GRVT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GST",
+    "name": "Green Satoshi Token",
+    "symbol": "GST",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GTC",
+    "name": "Gitcoin",
+    "symbol": "GTC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GUSD",
+    "name": "Gemini Dollar",
+    "symbol": "GUSD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GWEI",
+    "name": "Ethgas",
+    "symbol": "GWEI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "GYD",
+    "name": "Guyanese Dollar",
+    "country": "Guyanese Dollar",
+    "symbol": "GYD",
+    "flag": "🇬🇾",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "GYEN",
+    "name": "GYEN",
+    "symbol": "GYEN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "HBAR",
+    "name": "Hedera",
+    "symbol": "HBAR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "HFT",
+    "name": "Hashflow",
+    "symbol": "HFT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "HIGH",
+    "name": "Highstreet",
+    "symbol": "HIGH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "HKD",
+    "name": "Dólar de Hong Kong",
+    "country": "Hong Kong",
+    "symbol": "HK$",
+    "flag": "🇭🇰",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "HNT",
+    "name": "Helium",
+    "symbol": "HNT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "HOME",
+    "name": "HOME",
+    "symbol": "HOME",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "HONEY",
+    "name": "Hivemapper",
+    "symbol": "HONEY",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "HOPR",
+    "name": "Hopr Token",
+    "symbol": "HOPR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "HRK",
+    "name": "Croatian Kuna",
+    "country": "Croatian Kuna",
+    "symbol": "HRK",
+    "flag": "🇭🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "HTG",
+    "name": "Haitian Gourde",
+    "country": "Haitian Gourde",
+    "symbol": "HTG",
+    "flag": "🇭🇹",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "HUF",
+    "name": "Florín Húngaro",
+    "country": "Hungría",
+    "symbol": "Ft",
+    "flag": "🇭🇺",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "HYPE",
+    "name": "Hyperliquid",
+    "symbol": "HYPE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "HYPER",
+    "name": "Hyperlane",
+    "symbol": "HYPER",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ICNT",
+    "name": "Impossible Cloud Network",
+    "symbol": "ICNT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ICP",
+    "name": "Internet Computer",
+    "symbol": "ICP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "IDEX",
+    "name": "IDEX",
+    "symbol": "IDEX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "IDR",
+    "name": "Rupia Indonesia",
+    "country": "Indonesia",
+    "symbol": "Rp",
+    "flag": "🇮🇩",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ILS",
+    "name": "Nuevo Séquel",
+    "country": "Israel",
+    "symbol": "₪",
+    "flag": "🇮🇱",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ILV",
+    "name": "Illuvium",
+    "symbol": "ILV",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "IMP",
+    "name": "Isle of Man Pound",
+    "country": "Isle of Man Pound",
+    "symbol": "IMP",
+    "flag": "🇮🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "IMU",
+    "name": "Immunefi",
+    "symbol": "IMU",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "IMX",
+    "name": "ImmutableX",
+    "symbol": "IMX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "INDEX",
+    "name": "Index Cooperative",
+    "symbol": "INDEX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "INJ",
+    "name": "Injective Protocol",
+    "symbol": "INJ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "INV",
+    "name": "Inverse Finance",
+    "symbol": "INV",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "INX",
+    "name": "Infinex",
+    "symbol": "INX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "IO",
+    "name": "Io.Net",
+    "symbol": "IO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "IOTX",
+    "name": "IoTeX (ERC-20)",
+    "symbol": "IOTX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "IP",
+    "name": "Story",
+    "symbol": "IP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "IQD",
+    "name": "Iraqi Dinar",
+    "country": "Iraqi Dinar",
+    "symbol": "IQD",
+    "flag": "🇮🇶",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "IRR",
+    "name": "Iranian Rial",
+    "country": "Iranian Rial",
+    "symbol": "IRR",
+    "flag": "🇮🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "IRYS",
+    "name": "Irys",
+    "symbol": "IRYS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ISK",
+    "name": "Icelandic Króna",
+    "country": "Icelandic Króna",
+    "symbol": "ISK",
+    "flag": "🇮🇸",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "JASMY",
+    "name": "JasmyCoin",
+    "symbol": "JASMY",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "JEP",
+    "name": "Jersey Pound",
+    "country": "Jersey Pound",
+    "symbol": "JEP",
+    "flag": "🇯🇪",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "JITOSOL",
+    "name": "Jito Staked Sol",
+    "symbol": "JITOSOL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "JMD",
+    "name": "Jamaican Dollar",
+    "country": "Jamaican Dollar",
+    "symbol": "JMD",
+    "flag": "🇯🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "JOD",
+    "name": "Jordanian Dinar",
+    "country": "Jordanian Dinar",
+    "symbol": "JOD",
+    "flag": "🇯🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "JTO",
+    "name": "Jito",
+    "symbol": "JTO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "JUP",
+    "name": "Jupiter",
+    "symbol": "JUP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "JUPITER",
+    "name": "Jupiter",
+    "symbol": "JUPITER",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KAIO",
+    "name": "Kaio",
+    "symbol": "KAIO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KAITO",
+    "name": "Kaito",
+    "symbol": "KAITO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KARRAT",
+    "name": "Karrat",
+    "symbol": "KARRAT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KAT",
+    "name": "Katana",
+    "symbol": "KAT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KAVA",
+    "name": "Kava",
+    "symbol": "KAVA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KEEP",
+    "name": "Keep Network",
+    "symbol": "KEEP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KERNEL",
+    "name": "Kernel",
+    "symbol": "KERNEL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KES",
+    "name": "Kenyan Shilling",
+    "country": "Kenyan Shilling",
+    "symbol": "KES",
+    "flag": "🇰🇪",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "KEYCAT",
+    "name": "Keyboard Cat",
+    "symbol": "KEYCAT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KGS",
+    "name": "Kyrgyzstani Som",
+    "country": "Kyrgyzstani Som",
+    "symbol": "KGS",
+    "flag": "🇰🇬",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "KHR",
+    "name": "Cambodian Riel",
+    "country": "Cambodian Riel",
+    "symbol": "KHR",
+    "flag": "🇰🇭",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "KID",
+    "name": "KID",
+    "country": "KID",
+    "symbol": "KID",
+    "flag": "🇰🇮",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "KITE",
+    "name": "Kite",
+    "symbol": "KITE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KMF",
+    "name": "Comorian Franc",
+    "country": "Comorian Franc",
+    "symbol": "KMF",
+    "flag": "🇰🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "KMNO",
+    "name": "Kamino",
+    "symbol": "KMNO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KNC",
+    "name": "Kyber Network",
+    "symbol": "KNC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KRL",
+    "name": "kryll",
+    "symbol": "KRL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KSM",
+    "name": "Kusama",
+    "symbol": "KSM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KTA",
+    "name": "Keeta",
+    "symbol": "KTA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "KWD",
+    "name": "Dinar Kuwaití",
+    "country": "Kuwait",
+    "symbol": "KD",
+    "flag": "🇰🇼",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "KYD",
+    "name": "Cayman Islands Dollar",
+    "country": "Cayman Islands Dollar",
+    "symbol": "KYD",
+    "flag": "🇰🇾",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "KZT",
+    "name": "Kazakhstani Tenge",
+    "country": "Kazakhstani Tenge",
+    "symbol": "KZT",
+    "flag": "🇰🇿",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "L3",
+    "name": "Layer3",
+    "symbol": "L3",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LA",
+    "name": "Lagrange",
+    "symbol": "LA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LAK",
+    "name": "Lao Kip",
+    "country": "Lao Kip",
+    "symbol": "LAK",
+    "flag": "🇱🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "LAYER",
+    "name": "Solayer",
+    "symbol": "LAYER",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LBP",
+    "name": "Lebanese Pound",
+    "country": "Lebanese Pound",
+    "symbol": "LBP",
+    "flag": "🇱🇧",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "LCX",
+    "name": "LCX Token",
+    "symbol": "LCX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LDO",
+    "name": "Lido DAO",
+    "symbol": "LDO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LIGHTER",
+    "name": "Lighter",
+    "symbol": "LIGHTER",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LINEA",
+    "name": "Linea",
+    "symbol": "LINEA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LIT",
+    "name": "Litentry",
+    "symbol": "LIT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LKR",
+    "name": "Sri Lankan Rupee",
+    "country": "Sri Lankan Rupee",
+    "symbol": "LKR",
+    "flag": "🇱🇰",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "LMTS",
+    "name": "Limitless",
+    "symbol": "LMTS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LOKA",
+    "name": "League of Kingdoms Arena",
+    "symbol": "LOKA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LOOM",
+    "name": "Loom Network",
+    "symbol": "LOOM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LPT",
+    "name": "Livepeer",
+    "symbol": "LPT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LQTY",
+    "name": "Liquity",
+    "symbol": "LQTY",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LRC",
+    "name": "Loopring",
+    "symbol": "LRC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LRD",
+    "name": "Liberian Dollar",
+    "country": "Liberian Dollar",
+    "symbol": "LRD",
+    "flag": "🇱🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "LRDS",
+    "name": "Blocklords",
+    "symbol": "LRDS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LSETH",
+    "name": "Liquid Staked ETH",
+    "symbol": "LSETH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "LSL",
+    "name": "Lesotho Loti",
+    "country": "Lesotho Loti",
+    "symbol": "LSL",
+    "flag": "🇱🇸",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "LVL",
+    "name": "Latvian Lats",
+    "country": "Latvian Lats",
+    "symbol": "LVL",
+    "flag": "🇱🇻",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "LYD",
+    "name": "Libyan Dinar",
+    "country": "Libyan Dinar",
+    "symbol": "LYD",
+    "flag": "🇱🇾",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MAD",
+    "name": "Moroccan Dirham",
+    "country": "Moroccan Dirham",
+    "symbol": "MAD",
+    "flag": "🇲🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MAGIC",
+    "name": "Magic",
+    "symbol": "MAGIC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MAMO",
+    "name": "Mamo",
+    "symbol": "MAMO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MANA",
+    "name": "Decentraland",
+    "symbol": "MANA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MANTLE",
+    "name": "Mantle",
+    "symbol": "MANTLE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MASK",
+    "name": "Mask Network",
+    "symbol": "MASK",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MATH",
+    "name": "MATH",
+    "symbol": "MATH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MCO2",
+    "name": "Moss Carbon Credit",
+    "symbol": "MCO2",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MDL",
+    "name": "Moldovan Leu",
+    "country": "Moldovan Leu",
+    "symbol": "MDL",
+    "flag": "🇲🇩",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MDT",
+    "name": "Measurable Data Token",
+    "symbol": "MDT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ME",
+    "name": "Magic Eden",
+    "symbol": "ME",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MEDIA",
+    "name": "Media Network",
+    "symbol": "MEDIA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MEGA",
+    "name": "MegaETH",
+    "symbol": "MEGA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MET",
+    "name": "Meteora",
+    "symbol": "MET",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "META",
+    "name": "Metadao",
+    "symbol": "META",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "METIS",
+    "name": "MetisDAO",
+    "symbol": "METIS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MEZO",
+    "name": "Mezo",
+    "symbol": "MEZO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MGA",
+    "name": "Malagasy Ariary",
+    "country": "Malagasy Ariary",
+    "symbol": "MGA",
+    "flag": "🇲🇬",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MINA",
+    "name": "Mina",
+    "symbol": "MINA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MIR",
+    "name": "Mirror Protocol",
+    "symbol": "MIR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MKD",
+    "name": "Macedonian Denar",
+    "country": "Macedonian Denar",
+    "symbol": "MKD",
+    "flag": "🇲🇰",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MKR",
+    "name": "Maker",
+    "symbol": "MKR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MLN",
+    "name": "Enzyme",
+    "symbol": "MLN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MMK",
+    "name": "Myanmar Kyat",
+    "country": "Myanmar Kyat",
+    "symbol": "MMK",
+    "flag": "🇲🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MNDE",
+    "name": "Marinade",
+    "symbol": "MNDE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MNT",
+    "name": "Mongolian Tögrög",
+    "country": "Mongolian Tögrög",
+    "symbol": "MNT",
+    "flag": "🇲🇳",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MOBILE",
+    "name": "Helium Mobile",
+    "symbol": "MOBILE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MOG",
+    "name": "Mog Coin",
+    "symbol": "MOG",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MON",
+    "name": "Monad",
+    "symbol": "MON",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MONA",
+    "name": "Monavale",
+    "symbol": "MONA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MOODENG",
+    "name": "Moo Deng",
+    "symbol": "MOODENG",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MOP",
+    "name": "Macanese Pataca",
+    "country": "Macanese Pataca",
+    "symbol": "MOP",
+    "flag": "🇲🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MORPHO",
+    "name": "Morpho",
+    "symbol": "MORPHO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MOVE",
+    "name": "Movement",
+    "symbol": "MOVE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MPL",
+    "name": "Maple",
+    "symbol": "MPL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MPLX",
+    "name": "Metaplex",
+    "symbol": "MPLX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MRO",
+    "name": "Mauritanian Ouguiya",
+    "country": "Mauritanian Ouguiya",
+    "symbol": "MRO",
+    "flag": "🇲🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MRU",
+    "name": "Mauritanian Ouguiya",
+    "country": "Mauritanian Ouguiya",
+    "symbol": "MRU",
+    "flag": "🇲🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MSOL",
+    "name": "Marinade staked SOL",
+    "symbol": "MSOL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MTL",
+    "name": "Metal",
+    "symbol": "MTL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MULTI",
+    "name": "Multichain",
+    "symbol": "MULTI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MUR",
+    "name": "Mauritian Rupee",
+    "country": "Mauritian Rupee",
+    "symbol": "MUR",
+    "flag": "🇲🇺",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MUSD",
+    "name": "mStable USD",
+    "symbol": "MUSD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MUSE",
+    "name": "Muse Dao",
+    "symbol": "MUSE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MVR",
+    "name": "Maldivian Rufiyaa",
+    "country": "Maldivian Rufiyaa",
+    "symbol": "MVR",
+    "flag": "🇲🇻",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MWK",
+    "name": "Malawian Kwacha",
+    "country": "Malawian Kwacha",
+    "symbol": "MWK",
+    "flag": "🇲🇼",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MXC",
+    "name": "MXC",
+    "symbol": "MXC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "MYR",
+    "name": "Ringgit Malasio",
+    "country": "Malasia",
+    "symbol": "RM",
+    "flag": "🇲🇾",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "MZN",
+    "name": "Mozambican Metical",
+    "country": "Mozambican Metical",
+    "symbol": "MZN",
+    "flag": "🇲🇿",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "NAD",
+    "name": "Namibian Dollar",
+    "country": "Namibian Dollar",
+    "symbol": "NAD",
+    "flag": "🇳🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "NCT",
+    "name": "Polyswarm",
+    "symbol": "NCT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "NEON",
+    "name": "Neon",
+    "symbol": "NEON",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "NEST",
+    "name": "Nest Protocol",
+    "symbol": "NEST",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "NEWT",
+    "name": "Newton",
+    "symbol": "NEWT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "NEX",
+    "name": "Nexus",
+    "symbol": "NEX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "NGN",
+    "name": "Naira Nigeriana",
+    "country": "Nigeria",
+    "symbol": "₦",
+    "flag": "🇳🇬",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "NKN",
+    "name": "NKN",
+    "symbol": "NKN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "NMR",
+    "name": "Numeraire",
+    "symbol": "NMR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "NOICE",
+    "name": "Noice",
+    "symbol": "NOICE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "NOK",
+    "name": "Corona Noruega",
+    "country": "Noruega",
+    "symbol": "kr",
+    "flag": "🇳🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "NOM",
+    "name": "Nomina",
+    "symbol": "NOM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "NPR",
+    "name": "Nepalese Rupee",
+    "country": "Nepalese Rupee",
+    "symbol": "NPR",
+    "flag": "🇳🇵",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "NU",
+    "name": "NuCypher",
+    "symbol": "NU",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "O",
+    "name": "O1.Exchange",
+    "symbol": "O",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OCEAN",
+    "name": "Ocean Protocol",
+    "symbol": "OCEAN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OGN",
+    "name": "Origin Token",
+    "symbol": "OGN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OMG",
+    "name": "OMG Network",
+    "symbol": "OMG",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OMNI",
+    "name": "Omni Network",
+    "symbol": "OMNI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OMR",
+    "name": "Rial Omaní",
+    "country": "Omán",
+    "symbol": "﷼",
+    "flag": "🇴🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ONDO",
+    "name": "Ondo Finance",
+    "symbol": "ONDO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ONED",
+    "name": "Oned",
+    "symbol": "ONED",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OOKI",
+    "name": "Ooki Protocol",
+    "symbol": "OOKI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OP",
+    "name": "Optimism",
+    "symbol": "OP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OPG",
+    "name": "Opengradient",
+    "symbol": "OPG",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OPN",
+    "name": "OPINION",
+    "symbol": "OPN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ORCA",
+    "name": "Orca",
+    "symbol": "ORCA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ORN",
+    "name": "Orion Protocol",
+    "symbol": "ORN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OSMO",
+    "name": "Osmosis",
+    "symbol": "OSMO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "OXT",
+    "name": "Orchid",
+    "symbol": "OXT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PAX",
+    "name": "Paxos Standard",
+    "symbol": "PAX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PAXG",
+    "name": "PAX Gold",
+    "symbol": "PAXG",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PENDLE",
+    "name": "Pendle",
+    "symbol": "PENDLE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PENGU",
+    "name": "Pudgy Penguins",
+    "symbol": "PENGU",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PERP",
+    "name": "Perpetual Protocol",
+    "symbol": "PERP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PGK",
+    "name": "Papua New Guinean Kina",
+    "country": "Papua New Guinean Kina",
+    "symbol": "PGK",
+    "flag": "🇵🇬",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "PHP",
+    "name": "Peso Filipino",
+    "country": "Filipinas",
+    "symbol": "₱",
+    "flag": "🇵🇭",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "PIRATE",
+    "name": "Pirate Nation",
+    "symbol": "PIRATE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PKR",
+    "name": "Pakistani Rupee",
+    "country": "Pakistani Rupee",
+    "symbol": "PKR",
+    "flag": "🇵🇰",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "PLA",
+    "name": "PlayDapp",
+    "symbol": "PLA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PLN",
+    "name": "Zloty Polaco",
+    "country": "Polonia",
+    "symbol": "zł",
+    "flag": "🇵🇱",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "PLU",
+    "name": "Pluton",
+    "symbol": "PLU",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PLUME",
+    "name": "Plume",
+    "symbol": "PLUME",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PNG",
+    "name": "Pangolin",
+    "symbol": "PNG",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PNUT",
+    "name": "Peanut The Squirrel",
+    "symbol": "PNUT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "POL",
+    "name": "Polygon Ecosystem Token",
+    "symbol": "POL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "POLS",
+    "name": "Polkastarter",
+    "symbol": "POLS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "POLY",
+    "name": "Polymath Network",
+    "symbol": "POLY",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "POND",
+    "name": "Marlin",
+    "symbol": "POND",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "POPCAT",
+    "name": "Popcat",
+    "symbol": "POPCAT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "POWR",
+    "name": "Power Ledger",
+    "symbol": "POWR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PRCL",
+    "name": "Parcl",
+    "symbol": "PRCL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PRIME",
+    "name": "Prime",
+    "symbol": "PRIME",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PRL",
+    "name": "Perle",
+    "symbol": "PRL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PRO",
+    "name": "Propy",
+    "symbol": "PRO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PROMPT",
+    "name": "Prompt",
+    "symbol": "PROMPT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PROS",
+    "name": "Pharos",
+    "symbol": "PROS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PROVE",
+    "name": "Succinct",
+    "symbol": "PROVE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PRQ",
+    "name": "PARSIQ",
+    "symbol": "PRQ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PUMP",
+    "name": "Pump.fun",
+    "symbol": "PUMP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PUNDIX",
+    "name": "Pundi X",
+    "symbol": "PUNDIX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PYR",
+    "name": "Vulcan Forged",
+    "symbol": "PYR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PYTH",
+    "name": "Pyth Network",
+    "symbol": "PYTH",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "PYUSD",
+    "name": "Paypal Usd",
+    "symbol": "PYUSD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "QAR",
+    "name": "Riyal Catarí",
+    "country": "Catar",
+    "symbol": "﷼",
+    "flag": "🇶🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "QI",
+    "name": "Benqi",
+    "symbol": "QI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "QNT",
+    "name": "Quant",
+    "symbol": "QNT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "QSP",
+    "name": "Quantstamp",
+    "symbol": "QSP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "QUICK",
+    "name": "QuickSwap",
+    "symbol": "QUICK",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RAD",
+    "name": "Radicle",
+    "symbol": "RAD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RAI",
+    "name": "Rai Reflex Index",
+    "symbol": "RAI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RARE",
+    "name": "SuperRare",
+    "symbol": "RARE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RARI",
+    "name": "Rarible",
+    "symbol": "RARI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RAVE",
+    "name": "Ravedao",
+    "symbol": "RAVE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RAY",
+    "name": "Raydium",
+    "symbol": "RAY",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RBN",
+    "name": "Ribbon Finance",
+    "symbol": "RBN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RE",
+    "name": "Re",
+    "symbol": "RE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RECALL",
+    "name": "Recall Network",
+    "symbol": "RECALL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RED",
+    "name": "Redstone",
+    "symbol": "RED",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "REN",
+    "name": "Ren",
+    "symbol": "REN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RENDER",
+    "name": "Render Network",
+    "symbol": "RENDER",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "REP",
+    "name": "Augur",
+    "symbol": "REP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "REQ",
+    "name": "Request",
+    "symbol": "REQ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "REZ",
+    "name": "Renzo",
+    "symbol": "REZ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RGT",
+    "name": "Rari Governance Token",
+    "symbol": "RGT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RLC",
+    "name": "iExec RLC",
+    "symbol": "RLC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RLS",
+    "name": "Rayls",
+    "symbol": "RLS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RLY",
+    "name": "Rally",
+    "symbol": "RLY",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RNBW",
+    "name": "Rainbow",
+    "symbol": "RNBW",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RNDR",
+    "name": "Render Token",
+    "symbol": "RNDR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ROBO",
+    "name": "Robo Token",
+    "symbol": "ROBO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RON",
+    "name": "Leu Rumano",
+    "country": "Rumania",
+    "symbol": "lei",
+    "flag": "🇷🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "RONIN",
+    "name": "Ronin",
+    "symbol": "RONIN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ROSE",
+    "name": "Oasis Network",
+    "symbol": "ROSE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RPL",
+    "name": "Rocket Pool",
+    "symbol": "RPL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RSC",
+    "name": "ResearchCoin",
+    "symbol": "RSC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RSD",
+    "name": "Serbian Dinar",
+    "country": "Serbian Dinar",
+    "symbol": "RSD",
+    "flag": "🇷🇸",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "RSR",
+    "name": "Reserve Rights",
+    "symbol": "RSR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "RUB",
+    "name": "Rublo Ruso",
+    "country": "Rusia",
+    "symbol": "₽",
+    "flag": "🇷🇺",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "RWF",
+    "name": "Rwandan Franc",
+    "country": "Rwandan Franc",
+    "symbol": "RWF",
+    "flag": "🇷🇼",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "S",
+    "name": "Sonic",
+    "symbol": "S",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SAFE",
+    "name": "Safe",
+    "symbol": "SAFE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SAND",
+    "name": "The Sandbox",
+    "symbol": "SAND",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SAPIEN",
+    "name": "Sapien",
+    "symbol": "SAPIEN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SBD",
+    "name": "Solomon Islands Dollar",
+    "country": "Solomon Islands Dollar",
+    "symbol": "SBD",
+    "flag": "🇸🇧",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SCR",
+    "name": "Seychellois Rupee",
+    "country": "Seychellois Rupee",
+    "symbol": "SCR",
+    "flag": "🇸🇨",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SD",
+    "name": "Stader",
+    "symbol": "SD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SDG",
+    "name": "Sudanese Pound",
+    "country": "Sudanese Pound",
+    "symbol": "SDG",
+    "flag": "🇸🇩",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SEAM",
+    "name": "Seamless",
+    "symbol": "SEAM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SEI",
+    "name": "Sei",
+    "symbol": "SEI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SEK",
+    "name": "Corona Sueca",
+    "country": "Suecia",
+    "symbol": "kr",
+    "flag": "🇸🇪",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SENT",
+    "name": "Sentient",
+    "symbol": "SENT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SGD",
+    "name": "Dólar de Singapur",
+    "country": "Singapur",
+    "symbol": "S$",
+    "flag": "🇸🇬",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SHDW",
+    "name": "Shadow",
+    "symbol": "SHDW",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SHP",
+    "name": "Saint Helenian Pound",
+    "country": "Saint Helenian Pound",
+    "symbol": "SHP",
+    "flag": "🇸🇭",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SHPING",
+    "name": "Shping",
+    "symbol": "SHPING",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SIGN",
+    "name": "Sign",
+    "symbol": "SIGN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SKK",
+    "name": "Slovak Koruna",
+    "country": "Slovak Koruna",
+    "symbol": "SKK",
+    "flag": "🇸🇰",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SKL",
+    "name": "SKALE",
+    "symbol": "SKL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SKR",
+    "name": "Seeker",
+    "symbol": "SKR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SKY",
+    "name": "Sky",
+    "symbol": "SKY",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SLE",
+    "name": "SLE",
+    "country": "SLE",
+    "symbol": "SLE",
+    "flag": "🇸🇱",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SLL",
+    "name": "Sierra Leonean Leone",
+    "country": "Sierra Leonean Leone",
+    "symbol": "SLL",
+    "flag": "🇸🇱",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SNT",
+    "name": "Status",
+    "symbol": "SNT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SNX",
+    "name": "Synthetix",
+    "symbol": "SNX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SOS",
+    "name": "Somali Shilling",
+    "country": "Somali Shilling",
+    "symbol": "SOS",
+    "flag": "🇸🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SPA",
+    "name": "Sperax",
+    "symbol": "SPA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SPELL",
+    "name": "Spell Token",
+    "symbol": "SPELL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SPK",
+    "name": "Spark",
+    "symbol": "SPK",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SPX",
+    "name": "Spx6900",
+    "symbol": "SPX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SQD",
+    "name": "Subsquid",
+    "symbol": "SQD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SRD",
+    "name": "Surinamese Dollar",
+    "country": "Surinamese Dollar",
+    "symbol": "SRD",
+    "flag": "🇸🇷",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SSP",
+    "name": "South Sudanese Pound",
+    "country": "South Sudanese Pound",
+    "symbol": "SSP",
+    "flag": "🇸🇸",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "STD",
+    "name": "São Tomé and Príncipe Dobra",
+    "country": "São Tomé and Príncipe Dobra",
+    "symbol": "STD",
+    "flag": "🇸🇹",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "STG",
+    "name": "Stargate Finance V1",
+    "symbol": "STG",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "STN",
+    "name": "STN",
+    "country": "STN",
+    "symbol": "STN",
+    "flag": "🇸🇹",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "STORJ",
+    "name": "Storj",
+    "symbol": "STORJ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "STRK",
+    "name": "Starknet",
+    "symbol": "STRK",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "STX",
+    "name": "Stacks",
+    "symbol": "STX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SUKU",
+    "name": "SUKU",
+    "symbol": "SUKU",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SUP",
+    "name": "Superfluid",
+    "symbol": "SUP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SUPER",
+    "name": "SuperVerse",
+    "symbol": "SUPER",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SUSHI",
+    "name": "SushiSwap",
+    "symbol": "SUSHI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SVC",
+    "name": "Salvadoran Colón",
+    "country": "Salvadoran Colón",
+    "symbol": "SVC",
+    "flag": "🇸🇻",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SWELL",
+    "name": "Swell",
+    "symbol": "SWELL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SWFTC",
+    "name": "SwftCoin",
+    "symbol": "SWFTC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SXT",
+    "name": "Space and Time",
+    "symbol": "SXT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SYLO",
+    "name": "Sylo",
+    "symbol": "SYLO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SYN",
+    "name": "Synapse",
+    "symbol": "SYN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SYND",
+    "name": "Syndicate",
+    "symbol": "SYND",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SYP",
+    "name": "Syrian Pound",
+    "country": "Syrian Pound",
+    "symbol": "SYP",
+    "flag": "🇸🇾",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "SYRUP",
+    "name": "Maple Finance",
+    "symbol": "SYRUP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "SZL",
+    "name": "Swazi Lilangeni",
+    "country": "Swazi Lilangeni",
+    "symbol": "SZL",
+    "flag": "🇸🇿",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "T",
+    "name": "Threshold",
+    "symbol": "T",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TAO",
+    "name": "Bittensor",
+    "symbol": "TAO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TBTC",
+    "name": "TBTC",
+    "symbol": "TBTC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TGBP",
+    "name": "Tokenised Gbp",
+    "symbol": "TGBP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "THB",
+    "name": "Baht Tailandés",
+    "country": "Tailandia",
+    "symbol": "฿",
+    "flag": "🇹🇭",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "THQ",
+    "name": "Theoriq",
+    "symbol": "THQ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TIA",
+    "name": "Celestia",
+    "symbol": "TIA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TIME",
+    "name": "Chrono.tech",
+    "symbol": "TIME",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TJS",
+    "name": "Tajikistani Somoni",
+    "country": "Tajikistani Somoni",
+    "symbol": "TJS",
+    "flag": "🇹🇯",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "TMM",
+    "name": "Turkmenistani Manat",
+    "country": "Turkmenistani Manat",
+    "symbol": "TMM",
+    "flag": "🇹🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "TMT",
+    "name": "Turkmenistani Manat",
+    "country": "Turkmenistani Manat",
+    "symbol": "TMT",
+    "flag": "🇹🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "TND",
+    "name": "Tunisian Dinar",
+    "country": "Tunisian Dinar",
+    "symbol": "TND",
+    "flag": "🇹🇳",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "TNSR",
+    "name": "Tensor",
+    "symbol": "TNSR",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TON",
+    "name": "Toncoin",
+    "symbol": "TON",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-blue-500 text-white"
+  },
+  {
+    "code": "TONE",
+    "name": "TE-FOOD",
+    "symbol": "TONE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TOP",
+    "name": "Tongan Paʻanga",
+    "country": "Tongan Paʻanga",
+    "symbol": "TOP",
+    "flag": "🇹🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "TOSHI",
+    "name": "Toshi",
+    "symbol": "TOSHI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TOWNS",
+    "name": "Towns Protocol",
+    "symbol": "TOWNS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TRAC",
+    "name": "OriginTrail",
+    "symbol": "TRAC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TRB",
+    "name": "Tellor",
+    "symbol": "TRB",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TREE",
+    "name": "Treehouse",
+    "symbol": "TREE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TRIA",
+    "name": "Tria",
+    "symbol": "TRIA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TRIBE",
+    "name": "Tribe",
+    "symbol": "TRIBE",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TROLL",
+    "name": "Troll",
+    "symbol": "TROLL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TRU",
+    "name": "TrueFi",
+    "symbol": "TRU",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TRUMP",
+    "name": "Official Trump",
+    "symbol": "TRUMP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TRUST",
+    "name": "Intuition",
+    "symbol": "TRUST",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TTD",
+    "name": "Trinidad and Tobago Dollar",
+    "country": "Trinidad and Tobago Dollar",
+    "symbol": "TTD",
+    "flag": "🇹🇹",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "TURBO",
+    "name": "Turbo",
+    "symbol": "TURBO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TVD",
+    "name": "TVD",
+    "country": "TVD",
+    "symbol": "TVD",
+    "flag": "🇹🇻",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "TVK",
+    "name": "The Virtua Kolect",
+    "symbol": "TVK",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "TWD",
+    "name": "Nuevo Dólar Taiwanés",
+    "country": "Taiwán",
+    "symbol": "NT$",
+    "flag": "🇹🇼",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "TZS",
+    "name": "Tanzanian Shilling",
+    "country": "Tanzanian Shilling",
+    "symbol": "TZS",
+    "flag": "🇹🇿",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "UAH",
+    "name": "Ukrainian Hryvnia",
+    "country": "Ukrainian Hryvnia",
+    "symbol": "UAH",
+    "flag": "🇺🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "UGX",
+    "name": "Ugandan Shilling",
+    "country": "Ugandan Shilling",
+    "symbol": "UGX",
+    "flag": "🇺🇬",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "UMA",
+    "name": "UMA",
+    "symbol": "UMA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "UNFI",
+    "name": "Unifi Protocol DAO",
+    "symbol": "UNFI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "UP",
+    "name": "Superform",
+    "symbol": "UP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "UPI",
+    "name": "Pawtocol",
+    "symbol": "UPI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "USD1",
+    "name": "World Liberty Financial Usd",
+    "symbol": "USD1",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "USDF",
+    "name": "Usdf",
+    "symbol": "USDF",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "USDS",
+    "name": "USDS",
+    "symbol": "USDS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "USELESS",
+    "name": "Useless Coin",
+    "symbol": "USELESS",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "UST",
+    "name": "TerraClassicUSD",
+    "symbol": "UST",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "UZS",
+    "name": "Uzbekistan Som",
+    "country": "Uzbekistan Som",
+    "symbol": "UZS",
+    "flag": "🇺🇿",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "VARA",
+    "name": "Vara",
+    "symbol": "VARA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "VEF",
+    "name": "Venezuelan Bolívar",
+    "country": "Venezuelan Bolívar",
+    "symbol": "VEF",
+    "flag": "🇻🇪",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "VELO",
+    "name": "Velodrome Finance",
+    "symbol": "VELO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "VET",
+    "name": "VeChain",
+    "symbol": "VET",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "VGX",
+    "name": "Voyager Token",
+    "symbol": "VGX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "VIRTUAL",
+    "name": "Virtuals Protocol",
+    "symbol": "VIRTUAL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "VND",
+    "name": "Dong Vietnamita",
+    "country": "Vietnam",
+    "symbol": "₫",
+    "flag": "🇻🇳",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "VOXEL",
+    "name": "Voxies",
+    "symbol": "VOXEL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "VTHO",
+    "name": "VeThor",
+    "symbol": "VTHO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "VUV",
+    "name": "Vanuatu Vatu",
+    "country": "Vanuatu Vatu",
+    "symbol": "VUV",
+    "flag": "🇻🇺",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "VVV",
+    "name": "Venice Token",
+    "symbol": "VVV",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "W",
+    "name": "Wormhole",
+    "symbol": "W",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WAL",
+    "name": "Walrus",
+    "symbol": "WAL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WAMPL",
+    "name": "Wrapped Ampleforth",
+    "symbol": "WAMPL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WAXL",
+    "name": "Wrapped Axelar",
+    "symbol": "WAXL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WBTC",
+    "name": "Wrapped Bitcoin",
+    "symbol": "WBTC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WCFG",
+    "name": "Wrapped Centrifuge",
+    "symbol": "WCFG",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WCT",
+    "name": "Walletconnect Token",
+    "symbol": "WCT",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WELL",
+    "name": "Moonwell",
+    "symbol": "WELL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WET",
+    "name": "Humidifi",
+    "symbol": "WET",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WIF",
+    "name": "Dogwifhat",
+    "symbol": "WIF",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WLD",
+    "name": "Worldcoin",
+    "symbol": "WLD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WLFI",
+    "name": "World Liberty Financial",
+    "symbol": "WLFI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WLUNA",
+    "name": "Wrapped Luna Classic",
+    "symbol": "WLUNA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WMTX",
+    "name": "World Mobile Token",
+    "symbol": "WMTX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WRON",
+    "name": "Wrapped Ronin",
+    "symbol": "WRON",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "WST",
+    "name": "Samoan Tala",
+    "country": "Samoan Tala",
+    "symbol": "WST",
+    "flag": "🇼🇸",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XAF",
+    "name": "Central African Cfa Franc",
+    "country": "Central African Cfa Franc",
+    "symbol": "XAF",
+    "flag": "🇽🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XAG",
+    "name": "Silver (Troy Ounce)",
+    "country": "Silver (Troy Ounce)",
+    "symbol": "XAG",
+    "flag": "🇽🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XAN",
+    "name": "Anoma",
+    "symbol": "XAN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "XAU",
+    "name": "Gold (Troy Ounce)",
+    "country": "Gold (Troy Ounce)",
+    "symbol": "XAU",
+    "flag": "🇽🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XCD",
+    "name": "East Caribbean Dollar",
+    "country": "East Caribbean Dollar",
+    "symbol": "XCD",
+    "flag": "🇽🇨",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XCG",
+    "name": "XCG",
+    "country": "XCG",
+    "symbol": "XCG",
+    "flag": "🇽🇨",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XCN",
+    "name": "Onyxcoin",
+    "symbol": "XCN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "XDR",
+    "name": "Special Drawing Rights",
+    "country": "Special Drawing Rights",
+    "symbol": "XDR",
+    "flag": "🇽🇩",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XLM",
+    "name": "Stellar",
+    "symbol": "XLM",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptomoneda",
+    "iconBg": "bg-sky-600 text-white"
+  },
+  {
+    "code": "XMON",
+    "name": "XMON",
+    "symbol": "XMON",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "XOF",
+    "name": "West African Cfa Franc",
+    "country": "West African Cfa Franc",
+    "symbol": "XOF",
+    "flag": "🇽🇴",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XPD",
+    "name": "Palladium",
+    "country": "Palladium",
+    "symbol": "XPD",
+    "flag": "🇽🇵",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XPF",
+    "name": "Cfp Franc",
+    "country": "Cfp Franc",
+    "symbol": "XPF",
+    "flag": "🇽🇵",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XPL",
+    "name": "Plasma",
+    "symbol": "XPL",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "XPT",
+    "name": "Platinum",
+    "country": "Platinum",
+    "symbol": "XPT",
+    "flag": "🇽🇵",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "XSGD",
+    "name": "XSGD",
+    "symbol": "XSGD",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "XTZ",
+    "name": "Tezos",
+    "symbol": "XTZ",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "XYO",
+    "name": "XYO",
+    "symbol": "XYO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "YB",
+    "name": "Yield Basis",
+    "symbol": "YB",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "YER",
+    "name": "Yemeni Rial",
+    "country": "Yemeni Rial",
+    "symbol": "YER",
+    "flag": "🇾🇪",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "YFI",
+    "name": "yearn.finance",
+    "symbol": "YFI",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "YFII",
+    "name": "DFI.Money",
+    "symbol": "YFII",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZAMA",
+    "name": "Zama",
+    "symbol": "ZAMA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZAR",
+    "name": "Rand Sudafricano",
+    "country": "Sudáfrica",
+    "symbol": "R",
+    "flag": "🇿🇦",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ZEC",
+    "name": "Zcash",
+    "symbol": "ZEC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZEN",
+    "name": "Horizen",
+    "symbol": "ZEN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZETA",
+    "name": "Zetachain",
+    "symbol": "ZETA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZETACHAIN",
+    "name": "ZetaChain",
+    "symbol": "ZETACHAIN",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZK",
+    "name": "zkSync",
+    "symbol": "ZK",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZKC",
+    "name": "Boundless",
+    "symbol": "ZKC",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZKP",
+    "name": "Zkpass",
+    "symbol": "ZKP",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZMK",
+    "name": "Zambian Kwacha",
+    "country": "Zambian Kwacha",
+    "symbol": "ZMK",
+    "flag": "🇿🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ZMW",
+    "name": "Zambian Kwacha",
+    "country": "Zambian Kwacha",
+    "symbol": "ZMW",
+    "flag": "🇿🇲",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ZORA",
+    "name": "Zora",
+    "symbol": "ZORA",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZRO",
+    "name": "Layerzero",
+    "symbol": "ZRO",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZRX",
+    "name": "0x",
+    "symbol": "ZRX",
+    "flag": "🪙",
+    "type": "crypto",
+    "category": "Criptoactivo",
+    "iconBg": "bg-purple-700 text-white"
+  },
+  {
+    "code": "ZWG",
+    "name": "ZWG",
+    "country": "ZWG",
+    "symbol": "ZWG",
+    "flag": "🇿🇼",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  },
+  {
+    "code": "ZWL",
+    "name": "ZWL",
+    "country": "ZWL",
+    "symbol": "ZWL",
+    "flag": "🇿🇼",
+    "type": "fiat",
+    "category": "Fíat",
+    "iconBg": "bg-emerald-700 text-white"
+  }
+]
