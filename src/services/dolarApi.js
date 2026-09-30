@@ -25,11 +25,6 @@ async function fetchWithTimeout(url) {
     const cacheBusterUrl = `${url}${separator}_t=${Date.now()}`;
     const res = await fetch(cacheBusterUrl, {
       signal: controller.signal,
-      cache: "no-store",
-      headers: {
-        "Cache-Control": "no-cache, no-store, must-revalidate",
-        Pragma: "no-cache",
-      },
     });
     clearTimeout(timer);
     if (!res.ok) return null;

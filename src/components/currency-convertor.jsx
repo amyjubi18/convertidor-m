@@ -86,19 +86,13 @@ export default function CurrencyConverter() {
   const fetchAllRates = useCallback(async () => {
     try {
       const [cbRes, erRes, binanceRes, dolarRes] = await Promise.allSettled([
-        fetch("https://api.coinbase.com/v2/exchange-rates?currency=USD", {
-          cache: "no-store",
-        })
+        fetch(`https://api.coinbase.com/v2/exchange-rates?currency=USD&_t=${Date.now()}`)
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null),
-        fetch(`https://open.er-api.com/v6/latest/USD?_t=${Date.now()}`, {
-          cache: "no-store",
-        })
+        fetch(`https://open.er-api.com/v6/latest/USD?_t=${Date.now()}`)
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null),
-        fetch("https://api.binance.com/api/v3/ticker/price", {
-          cache: "no-store",
-        })
+        fetch(`https://api.binance.com/api/v3/ticker/price?_t=${Date.now()}`)
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null),
         fetchDolarApiData(),
