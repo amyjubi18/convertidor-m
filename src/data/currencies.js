@@ -1,8 +1,14 @@
 import allCurrencies from "./allCurrencies.json";
 import fallbackRates from "./fallbackRates.json";
+import { DOLAR_API_CURRENCIES } from "../services/dolarApi";
+
+// Agregar divisas especializadas de DolarApi que no estén en la lista base
+const extraDolarApiCurrencies = DOLAR_API_CURRENCIES.filter(
+  (dac) => !allCurrencies.some((c) => c.code === dac.code)
+);
 
 // Lista estructurada completa
-export const CURRENCY_LIST = allCurrencies;
+export const CURRENCY_LIST = [...extraDolarApiCurrencies, ...allCurrencies];
 
 // Tasas por defecto extraídas del archivo JSON
 export const DEFAULT_FALLBACK_RATES = fallbackRates;
@@ -20,12 +26,21 @@ export function getCurrencyInfo(code) {
   }
 
   const upperCode = code.toUpperCase();
-  const known = CURRENCY_LIST.find((c) => c.code === upperCode);
+  const dolarItem = DOLAR_API_CURRENCIES.find((c) => c.code === upperCode);
+  if (dolarItem) return dolarItem;
 
+  const known = CURRENCY_LIST.find((c) => c.code === upperCode);
   if (known) return known;
 
   // Fallback dinámico si la divisa o cripto no está definida manualmente
-  const isProbablyCrypto = upperCode.length > 3 || ["BTC", "ETH", "SOL"].includes(upperCode);
+  const isLatamSpecial =
+    upperCode.startsWith("ARS_") ||
+    upperCode.startsWith("VES_") ||
+    upperCode.startsWith("BOB_");
+  const isProbablyCrypto =
+    !isLatamSpecial &&
+    (upperCode.length > 3 || ["BTC", "ETH", "SOL"].includes(upperCode));
+
   return {
     code: upperCode,
     name: upperCode,
