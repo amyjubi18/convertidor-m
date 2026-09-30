@@ -77,7 +77,9 @@ export async function fetchDolarApiData() {
     brRes,
   ] = results.map((r) => (r.status === "fulfilled" ? r.value : null));
 
-  const rates = {};
+  const rates = {
+    USD: 1.0,
+  };
   const ratesDates = {};
   const details = {
     argentina: [],

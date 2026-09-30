@@ -275,20 +275,24 @@ export default function CurrencyConverter() {
     if (fromCurrency === toCurrency) return 1;
 
     let fromRate =
-      typeof rates[fromCurrency] === "number"
+      fromCurrency === "USD"
+        ? 1.0
+        : typeof rates[fromCurrency] === "number"
         ? rates[fromCurrency]
         : parseFloat(rates[fromCurrency]);
     let toRate =
-      typeof rates[toCurrency] === "number"
+      toCurrency === "USD"
+        ? 1.0
+        : typeof rates[toCurrency] === "number"
         ? rates[toCurrency]
         : parseFloat(rates[toCurrency]);
 
     // Si por alguna razón la tasa en rates es inválida o 0, usar fallback garantizado
     if (!fromRate || isNaN(fromRate) || fromRate <= 0) {
-      fromRate = parseFloat(DEFAULT_FALLBACK_RATES[fromCurrency]) || 1;
+      fromRate = parseFloat(DEFAULT_FALLBACK_RATES[fromCurrency]) || (fromCurrency === "USD" ? 1.0 : 0);
     }
     if (!toRate || isNaN(toRate) || toRate <= 0) {
-      toRate = parseFloat(DEFAULT_FALLBACK_RATES[toCurrency]) || 0;
+      toRate = parseFloat(DEFAULT_FALLBACK_RATES[toCurrency]) || (toCurrency === "USD" ? 1.0 : 0);
     }
 
     if (fromRate <= 0 || toRate <= 0) return 0;
