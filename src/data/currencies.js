@@ -1,6 +1,6 @@
 import allCurrencies from "./allCurrencies.json";
 import fallbackRates from "./fallbackRates.json";
-import { DOLAR_API_CURRENCIES } from "../services/dolarApi.js";
+import { DOLAR_API_CURRENCIES } from "../services/dolarApi";
 
 // Agregar divisas especializadas de DolarApi que no estén en la lista base
 const extraDolarApiCurrencies = DOLAR_API_CURRENCIES.filter(
@@ -10,19 +10,8 @@ const extraDolarApiCurrencies = DOLAR_API_CURRENCIES.filter(
 // Lista estructurada completa
 export const CURRENCY_LIST = [...extraDolarApiCurrencies, ...allCurrencies];
 
-// Tasas por defecto extraídas del archivo JSON con respaldo garantizado
-export const DEFAULT_FALLBACK_RATES = {
-  ...fallbackRates,
-  USD: 1,
-  VES: 955.86,
-  VES_PARALELO: 955.86,
-  VES_OFICIAL: 859.06,
-  ARS: 1560.0,
-  ARS_BLUE: 1560.0,
-  ARS_OFICIAL: 1541.54,
-  ARS_MEP: 1541.66,
-  ARS_CCL: 1621.57,
-};
+// Tasas por defecto extraídas del archivo JSON
+export const DEFAULT_FALLBACK_RATES = fallbackRates;
 
 // Función para obtener información metadatos de una divisa
 export function getCurrencyInfo(code) {

@@ -127,8 +127,15 @@ export default function CurrencyDropdown({
 
       {/* Botón principal de selección */}
       <div className="relative group">
-        <button
-          type="button"
+        <div
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              setDisplayLimit(50);
+              setIsOpen((prev) => !prev);
+            }
+          }}
           onClick={() => {
             setDisplayLimit(50);
             setIsOpen((prev) => !prev);
@@ -205,7 +212,7 @@ export default function CurrencyDropdown({
               }`}
             />
           </div>
-        </button>
+        </div>
       </div>
 
       {/* Panel desplegable */}
